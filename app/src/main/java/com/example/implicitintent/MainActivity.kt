@@ -5,6 +5,7 @@ import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.provider.MediaStore
+import android.widget.Button
 import androidx.cardview.widget.CardView
 
 class MainActivity : AppCompatActivity() {
@@ -21,6 +22,10 @@ class MainActivity : AppCompatActivity() {
         findViewById<CardView>(R.id.cv2).setOnClickListener {
             val intent = Intent(MediaStore.ACTION_IMAGE_CAPTURE)
             startActivity(intent)
+        }
+        findViewById<Button>(R.id.btn_next).setOnClickListener {
+            val inext = Intent(this@MainActivity,WebViewActiviity::class.java)
+            startActivity(inext)
         }
 
 

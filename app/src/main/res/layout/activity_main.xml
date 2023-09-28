@@ -28,4 +28,13 @@
         app:cardBackgroundColor="@color/red"
         app:cardCornerRadius="9dp"/>
 
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="9dp"
+        android:text="next"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
